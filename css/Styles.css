@@ -1,0 +1,332 @@
+
+/* RESETEO */
+
+body{
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow-x: hidden;
+
+    background-color: var(--Cream);
+}
+
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+/* RESETEO DE ESTILOS */
+
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+/* Tarjeta */
+
+section{
+    display: flex;
+    align-content: center;
+
+    padding: 40px;
+}
+
+.Card{
+    margin-left: auto;
+    margin-right: auto;
+
+
+    width: 50rem;
+    height: 34.375rem;
+    background-color: var(--White);
+
+    border-radius: 20px;
+}
+
+/* zona de la imagen */
+
+.left img{
+    width: 25rem;
+    height: 34.375rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Zona del texto */
+
+.Card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right{
+    margin-left: 20px;
+}
+
+.right h2{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.right h1{
+    line-height: 40px;
+
+    font-size: 2.9rem;
+    font-style: oblique;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.right p{
+    font-size: 18px;
+    font-style: italic;
+    width: 90%;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.right h3{
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: var(--Darkcyan);
+}
+
+.right .price{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-content: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.right h4{
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-top: 16px;
+    margin-left: 50px;
+}
+
+
+button {
+    background-color: var(--Darkcyan);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 3.5rem;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+button img {
+    width: 2rem;
+}
+
+button {
+    color: var(--White);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button span{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    justify-items: center;
+}
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 850px) {
+    
+    .Card{
+        margin-left: auto;
+        margin-right: auto;
+
+
+        width: 35rem;
+        height: 30rem;
+        background-color: var(--White);
+
+        border-radius: 20px;
+    }
+
+    /* zona de la imagen */
+
+    .left img{
+        width: 270px;
+        height: 30rem;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    /* Zona del texto */
+
+    .right h2{
+        font-size: 1rem;
+    }
+
+    .right h1{
+        font-size: 2.4rem;
+        
+    }
+
+    .right p{
+        font-size: 16px;
+    }
+
+    .right h3{
+        margin-top: 25px;
+    }
+
+    .right .price{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        align-content: center;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .right h4{
+        font-size: .8rem;
+    }
+
+
+    button {
+        height: 2.4rem;
+    }
+
+    button img {
+        width: 1.5rem;
+    }
+
+    button {
+        color: var(--White);
+        font-size: 1rem;
+        cursor: pointer;
+
+        margin-top: -20px;
+    }
+
+    button span{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        justify-items: center;
+    }
+
+}
+
+
+/* *********************** */
+
+@media screen and (max-width: 700px) {
+    
+    .Card{
+        flex-direction: column;
+        height: 48rem;
+        width: 400px;
+    }
+
+    .left img{
+        position: absolute;
+        top: 40px;
+        width: 400px;
+        height: 20rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .right h2{
+        font-size: 1.5rem;
+        margin-top: 280px;
+    }
+    
+    .right h1{
+        font-size: 2rem;
+        margin-top: 1px;
+    }
+    
+    .right p{
+        font-size: 1.4rem;
+    }
+    
+    .right h3{
+        margin-top: 10px;
+        font-size: 2.2rem;
+        color: var(--Darkcyan);
+    }
+    
+    .right .price{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        align-content: center;
+    
+        display: flex;
+        align-items: center;
+
+        margin-top: 10px;
+    }
+    
+    .right h4{
+        font-size: 1.2rem;
+        margin-left: 50px;
+
+        top: 0;
+        bottom: 0;
+    }
+    
+    
+    button {
+        background-color: var(--Darkcyan);
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 3.5rem;
+        border-radius: 10px;
+        border-color: transparent;
+    }
+    
+    button img {
+        width: 2rem;
+    }
+    
+    button {
+        color: var(--White);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    button span{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        justify-items: center;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .Card{
+        width: 300px;
+    }
+
+    .left img{
+        width: 295px;
+    }
+
+
+}
